@@ -13,7 +13,7 @@ public class Main {
 
         //prompt user for an articla name
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the name of the wikipedia article. \nPress ENTER to process: ");
+        System.out.println("Enter the name of a wikipedia article. Press ENTER to process: ");
         String articleName = scanner.nextLine();
         scanner.close();
 
