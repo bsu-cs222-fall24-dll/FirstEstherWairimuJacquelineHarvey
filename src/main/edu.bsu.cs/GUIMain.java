@@ -1,4 +1,4 @@
-package cs222.bsu;
+package edu.bsu.cs;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
