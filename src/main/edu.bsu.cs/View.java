@@ -2,7 +2,10 @@ package edu.bsu.cs;
 
 import java.util.List;
 public class View {
-    // Display recent revisions in a readable format
+  /**
+     * Displays the list of changes in a readable format.
+     * @param changes List of WikiChange objects to be displayed.
+     */
     public void displayChanges(List<WikiChange> changes){
         if(changes.isEmpty()){
             System.out.print("No wikipedia changes found ");
