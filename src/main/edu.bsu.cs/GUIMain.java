@@ -1,5 +1,4 @@
 package edu.bsu.cs;
-
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -9,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.util.List;
 
-public class GUIMain extends Application { 
+public class GUIMain extends Application {
     // Declares the `GUIMain` class that extends `Application`, making it a JavaFX application.
     private Controller controller;
     private TextField articleInput;
@@ -31,7 +30,7 @@ public class GUIMain extends Application {
 
         fetchButton = new Button("Click me to Fetch Recent Changes");
         fetchButton.setOnAction(event -> onFetchButtonClicked());  // Makes the TextArea non-editable, as users should only view results and not modify them
-        
+
         VBox layout = new VBox(10, articleInput, fetchButton, resultArea);
         Scene scene = new Scene(layout, 500, 300);
 
@@ -48,7 +47,7 @@ public class GUIMain extends Application {
             return;
         }
         // Disable interaction while fetching data
-        setUIEnabled(false);        
+        setUIEnabled(false);
         // Starts a new background thread to fetch data without freezing the UI.
         new Thread(() -> {
             try {
@@ -93,7 +92,7 @@ public class GUIMain extends Application {
         fetchButton.setDisable(!enabled);
         articleInput.setDisable(!enabled);
     }
-// The main method to launch the JavaFX application. This starts the GUI application
+    // The main method to launch the JavaFX application. This starts the GUI application
     public static void main(String[] args) {
         launch(args);
     }

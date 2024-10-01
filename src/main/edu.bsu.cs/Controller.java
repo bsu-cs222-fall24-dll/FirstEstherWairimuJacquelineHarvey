@@ -41,7 +41,7 @@ public class Controller {
             in.close();
 
             JSONObject jsonResponse = new JSONObject(content.toString());
-            System.out.println(jsonResponse.toString(2)); 
+            System.out.println(jsonResponse.toString(2));
 
             JSONObject pages = jsonResponse.getJSONObject("query").getJSONObject("pages");
 
@@ -52,8 +52,8 @@ public class Controller {
             // If the revisions array is missing, it means there are no revisions for this article
             if (!page.has("revisions")) {
                 System.out.println("No revisions found for the article: " + articleName);
-                view.displayChanges(new ArrayList<>()); 
-                return; 
+                view.displayChanges(new ArrayList<>());
+                return;
             }
 
             JSONArray revisions = page.getJSONArray("revisions");
@@ -86,5 +86,3 @@ public class Controller {
     }
 
 }
-
-
