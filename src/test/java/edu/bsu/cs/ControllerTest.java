@@ -3,19 +3,27 @@ package edu.bsu.cs;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+
+/* This class tests if the Controller class correctly fetches and stores changes.
+ *
+ *
+ * */
 public class ControllerTest {
-    //Test case to verify that the Controller fetches recent changes and updates the model.
     @Test
     public void testFetchAndDisplayChanges(){
         Model model = new Model();
         View view = new View(){
             @Override
             public void displayChanges(List<WikiChange> changes){
+                //override to capture output for testing
             }
         };
         Controller controller = new Controller(model, view);
-        String simulatedArticleName = "TestArtcile";
+        String simulatedArticleName = "TestArticle";
         controller.fetchRecentChanges(simulatedArticleName);
-        assertTrue(model.getChanges().size()> 0);
+        assertTrue(model.getChanges().size() >0);
     }
 }
+
+

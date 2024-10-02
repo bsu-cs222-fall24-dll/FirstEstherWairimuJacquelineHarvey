@@ -1,5 +1,4 @@
 package edu.bsu.cs;
-
 public class WikiChange {private final String username;
     private final String timestamp;
     private final String utcTimestamp;
@@ -18,5 +17,5 @@ public class WikiChange {private final String username;
     }
     public String getutcTimestamp(){
         return utcTimestamp;
-    }
+    }//
 }
