@@ -1,7 +1,11 @@
 package edu.bsu.cs;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -9,7 +13,6 @@ import javafx.stage.Stage;
 import java.util.List;
 
 public class GUIMain extends Application {
-    // Declares the `GUIMain` class that extends `Application`, making it a JavaFX application.
     private Controller controller;
     private TextField articleInput;
     private TextArea resultArea;
@@ -29,8 +32,9 @@ public class GUIMain extends Application {
         resultArea.setEditable(false);
 
         fetchButton = new Button("Click me to Fetch Recent Changes");
-        fetchButton.setOnAction(event -> onFetchButtonClicked());  // Makes the TextArea non-editable, as users should only view results and not modify them
+        fetchButton.setOnAction(event -> onFetchButtonClicked());
 
+        // Layout setup
         VBox layout = new VBox(10, articleInput, fetchButton, resultArea);
         Scene scene = new Scene(layout, 500, 300);
 
@@ -40,15 +44,16 @@ public class GUIMain extends Application {
 
         layout.requestFocus();
     }
+
     private void onFetchButtonClicked() {
         String articleName = articleInput.getText();
         if (articleName.isEmpty()) {
             showAlert(Alert.AlertType.ERROR, "Error", "Please enter an article name to process the request.");
             return;
         }
-        // Disable interaction while fetching data
+
         setUIEnabled(false);
-        // Starts a new background thread to fetch data without freezing the UI.
+
         new Thread(() -> {
             try {
                 controller.fetchRecentChanges(articleName);
@@ -60,40 +65,48 @@ public class GUIMain extends Application {
                     displayResults(changes, isRedirected);
                     setUIEnabled(true); // Re-enable the UI
                 });
-                // Catches any exceptions that occur during data fetching.
+
             } catch (Exception e) {
-                javafx.application.Platform.runLater(() -> { // Schedules code to run on the JavaFX Application thread to show an error alert.
+                javafx.application.Platform.runLater(() -> {
                     showAlert(Alert.AlertType.ERROR, "Network Error", "Failed to fetch recent changes. Please check your network connection.");
                     setUIEnabled(true);
+                    System.exit(1);
                 });
             }
         }).start();
     }
+
     private void displayResults(List<WikiChange> changes, boolean isRedirected) {
         resultArea.clear();
         if (isRedirected) {
             resultArea.appendText("You were redirected to a different article.\n\n");
         }
+
         if (changes.isEmpty()) {
             resultArea.appendText("No changes were found for this article.\n");
         } else {
             for (WikiChange change : changes) {
-                resultArea.appendText(change.getusername() + " at " + change.getutcTimestamp() + "\n");
-            }}
+                resultArea.appendText(change.getutcTimestamp() + "  " + change.getusername() + "\n");
+            }
+        }
     }
+
     private void showAlert(Alert.AlertType type, String title, String message) {
         Alert alert = new Alert(type);
-        alert.initModality(Modality.APPLICATION_MODAL); // Sets the alert to be modal, meaning it blocks interaction with other windows until dismissed
+        alert.initModality(Modality.APPLICATION_MODAL);
         alert.setTitle(title);
         alert.setContentText(message);
         alert.showAndWait();
     }
+
     private void setUIEnabled(boolean enabled) {
         fetchButton.setDisable(!enabled);
         articleInput.setDisable(!enabled);
     }
-    // The main method to launch the JavaFX application. This starts the GUI application
+
     public static void main(String[] args) {
         launch(args);
     }
 }
+
+
