@@ -2,7 +2,10 @@ package edu.bsu.cs;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -67,6 +70,7 @@ public class GUIMain extends Application {
                 javafx.application.Platform.runLater(() -> {
                     showAlert(Alert.AlertType.ERROR, "Network Error", "Failed to fetch recent changes. Please check your network connection.");
                     setUIEnabled(true);
+                    System.exit(1);
                 });
             }
         }).start();

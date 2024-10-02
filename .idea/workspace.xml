@@ -5,54 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc07dfa1-8ba3-4f02-9173-0b9074327c8b" name="Changes" comment="Added java directory in the main and&#10;test module because they were missing. &#10;&#10;Made some changes mainly in our GUIMain, Main, and Controller class because of some errors I was getting since our build.gradle.kts was not updated well.">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openjfx_javafx_controls_win_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openjfx_javafx_fxml_win_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_openjfx_javafx_graphics_win_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_2_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_nop_2_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/FirstProjectJacquelineHarveyEstherWairimu.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/FirstProjectJacquelineHarveyEstherWairimu.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/FirstProjectJacquelineHarveyEstherWairimu.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs/GUIMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs/WikiChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs/ControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs/ModelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs/ViewTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs/WikiChangeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_24_2024_10_52_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_24_2024_10_52_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/edu.bsu.cs/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/edu.bsu.cs/GUIMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/edu.bsu.cs/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/edu.bsu.cs/Model.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/edu.bsu.cs/View.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/edu.bsu.cs/WikiChange.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/edu.bsu.cs/ControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/edu.bsu.cs/ModelTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/edu.bsu.cs/ViewTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/edu.bsu.cs/WikiChangeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs/GUIMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs/GUIMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +110,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/septe/IdeaProjects/FirstGroupProject",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
@@ -257,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727792000499</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added java directory in the main and&#10;test module because they were missing. &#10;&#10;Made some changes mainly in our GUIMain, Main, and Controller class because of some errors I was getting since our build.gradle.kts was not updated well.">
+      <option name="closed" value="true" />
+      <created>1727841390569</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727841390569</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
